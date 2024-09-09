@@ -1,0 +1,15 @@
+.questions-main-container{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.questions-container{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.questions-card{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}

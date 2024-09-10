@@ -26,9 +26,9 @@ const QuestionItem = ({ques, handleNext, currentQuestion, totalQuestions, handle
             onClick={handlePrev}
             >Previous</button>
           )}
-          {currentQuestion === totalQuestions ? null : <button className="btn-skip"  onClick={handleNext}>Skip</button> }
+          <button className="btn-skip"  onClick={currentQuestion === totalQuestions ? handleSubmit : handleNext}>Skip</button>
           {currentQuestion === totalQuestions ? 
-            <button className="btn-next" onClick={handleSubmit}>Skip & Submit</button> 
+            <button className="btn-next" onClick={handleSubmit}>Submit</button> 
             : <button className="btn-next" onClick={handleNext}>Next</button>}
         </div>
     </div>
